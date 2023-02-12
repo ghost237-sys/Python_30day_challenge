@@ -4,3 +4,4 @@
 # Day4 -Control flow using if/elif/else
 # Day5 -loops (for/while)
 # Day6 -Functions
+# i won't update this readme again i will just be indicating what is in a file through its commit
