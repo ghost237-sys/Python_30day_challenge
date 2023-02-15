@@ -1,2 +1,2 @@
 
-Am doing a 3o day python challenge where i will be studying python straight for only 3o days
+Am doing a 30 day python challenge where i will be studying python straight for only 30 days
