@@ -1,0 +1,13 @@
+Not every user of a single operating system should have the same level of access to files
+Signand
+Out directories. Like any professional or enterprise­level operating system, Linux has
+methods for securing file and directory access. This security system allows the system
+administrator—the root user—or the file owner to protect their files from unwanted
+access or tampering by granting select users permissions to read, write, or execute files.
+For each file and directory, we can specify the permission status for the file’s owner, for
+particular groups of users, and for all other users. This is a necessity in a multiuser,
+enterprise­level operating system. The alternative would be quite chaotic.
+In this chapter, I’ll show you how to check for and change permissions on files and
+directories for select users, how to set default file and directory permissions, and how to
+set special permissions. Finally, you will see how a hacker’s understanding of
+permissions might help them exploit a system.
