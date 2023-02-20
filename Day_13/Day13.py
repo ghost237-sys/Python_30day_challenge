@@ -64,11 +64,91 @@ dog2 = Dog("Chuck",5,"chiuaua")#another instance(object) of the class Dog
 
 dog2.bark()#would output 'bark'
 
-#below are some topics that i will look at tommorow
-#Operator Overloding
-#you can sspecify the behavior of operators on your defined types
-#for example the __add__ method to use + to add objects
-#polymorphisim
-#Functions that work with several types are called polymorphic
+#operator overloading...this is defining operators for custom classes that allow operators such as + and * to used on them
+class vector:
+	def __init__(self,x,y):
+		self.x = x
+		self.y = y
+	def __add__(self,other):#this method takes the value of first.x and adds it to second.x and then takes the value of second.y and adds it to the first.y and returns an object from the class vector
+		return vector(self.x + other.x,self.y + other.y)
+
+first = vector(5,7)
+second = vector(3,9)
+result = first + second#this returns an object with two values x and y
+print(result.x)#outputs 8
+print(result.y)#outputs 16
+#the methods __init__ __add__ are called magic methods in python
+__sub__ for -
+__mul__ for *
+__truediv__ for /
+__floordiv__ for //
+__mod__ for %
+__pow__ for **
+__and__ for &
+__xor__ for ^
+__or__ for |
+#python also provideds magic methods for comparisons
+#an example is as shown below
+__lt__ for <
+__le__ for <=
+__eq__ for  ==
+__ne__ for !=
+__gt__ for >
+__ge__ for >=
+
 #inheritance
 #inheritance is the ability to define a new class that is modified version of an existing class
+#look at the example below
+class pet:
+	def __init__(self,name,age):
+		self.name = name 
+		self.age = age
+
+class cat(pet):#we add the class pet in parenthesis and cat inherits the init function from the class pet...hence we do not define the method init in cat
+	def speak(self):
+		print(f'i am {self.name} and am {self.age} years old')
+		print('meow')
+
+class cow(pet):
+	def speak(self):
+		print(f'i am {self.name} and am {self.age} years old')
+		print('MOOO')
+
+s = cat('Tim',12)
+print(s)#would output i am Tim and am 12 years old meow
+
+#if we wanted to add another attribute to the class cat....lets say a color
+class cat(pet):
+	def __init__(self,name,age,color):
+		Super.__init__(name,age)
+		self.color = color
+	def speak(self):
+		print(f'i am {self.name} and am {self.age} years old and am {self.color} in color')
+
+
+s2 = cat('jon',12,'blue')
+print(s2)
+
+#this are just basic uses of inheritance...in more complex exercises one would see the importance of using classes and inheritance
+
+#Class attributes are attributes in a class that are not defined inside a methdo
+class new:
+	person = 0
+	def __init__(self,name):
+		self.name = name
+		person+=1
+
+x = new('Mathius')
+y = new('Henry')
+
+print(new.person)#this will output 2 because the init method has been used twice by x and by y
+#class methodes
+#to use class methods we use the sign @
+
+
+
+#some few parts left to finish the classes and objects in python
+
+
+
+	
