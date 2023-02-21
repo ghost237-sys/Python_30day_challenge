@@ -1,5 +1,5 @@
 #Classes and Objects
-#we cant complete the whole topic in one day this is just a brief intro
+
 #A class is simply a user defined type 
 #an object is an instance of a class
 #for example;
@@ -143,11 +143,36 @@ y = new('Henry')
 
 print(new.person)#this will output 2 because the init method has been used twice by x and by y
 #class methodes
-#to use class methods we use the sign @
+#to use class methods we use the sign @...this is a class method decorator
+#they are called by a class which is passed to the cls parameter of the mehod
+class Rectangle:
+	def __init__(self,width,height):
+		self.width = width
+		self.height = height
+	def calculate_area(self):
+		return self.width * self.height
+
+	@classmethod
+	def new_square(cls,side_length):
+		return cls(side_length,side_length)#returns a class object with sidelength,sidelength as parameters
+
+square = Rectangle.new_square(5)#note that the method is called by the class Rectangle
+print(square.calculate_area())
+
+ #static methods
+ #they are similar to class methods, except they don't receive any additional arguments; they are like normal functions that belong to a class
+class Calculator:
+	@staticmethod
+	def add(a,b):
+		return a + b 
+
+n1 = 1
+n2 = 45
+ print(Calculator.add(n1,n2))#displays 46
 
 
 
-#some few parts left to finish the classes and objects in python
+#this are just basic usage of classes and objects in python...once you start complex projects you get their importande
 
 
 
