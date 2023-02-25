@@ -79,3 +79,4 @@ I made folders for each day where i have added files with simple exercises on to
 note if you want to run any code please take the small part dont run the whole file
 i have added files with exercises and code that runs when the whole file is run
 
+today i decided to try and do some exercises for the already learnt content
