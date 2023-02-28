@@ -1,6 +1,11 @@
 #Regular expressions
 #in python they can be accessed using the re module...and is accessed as follows
 import re
+#creating regex objects....passing a string value representing your regulaar expression to re.compile() returns a Regex Object
+phoneNumRegex = re.compile(r'\d\d\d-\d\d\d-\d\d\d\d')
+mo = phoneNumRegex.search('My number is 415-555-4243')
+print('phone number found: ' + mo.group())
+#it prints out...Phone number found: 415-555-4242
 
 #to avoid confusion while working with regular expressions,we could use raw strings as r'expression'
 
