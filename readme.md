@@ -81,5 +81,5 @@ i have added files with exercises and code that runs when the whole file is run
 
 rest APIS is a wide topic even if i cover it...i still would be doing a breif  intro here
 for more ...some google fu would be adviced
-#am learning pyqt for python gui developnment i will post tommorow
-tommorow
+#am learning pyqt for python gui development 
+#i am sorry i missed to update yesterday...but i will soon content is broad
